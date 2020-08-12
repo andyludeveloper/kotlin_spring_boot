@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class KotlinSprintWorkshopApplication
+class SpringBootKotlinWorkshopApplication
 
 fun main(args: Array<String>) {
-    runApplication<KotlinSprintWorkshopApplication>(*args)
+    runApplication<SpringBootKotlinWorkshopApplication>(*args)
 }
