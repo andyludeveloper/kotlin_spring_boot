@@ -1,4 +1,4 @@
-package com.example.kotlin_sprint_workshop
+package com.example.spring_boot_kotlin_workshop
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
