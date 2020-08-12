@@ -1,1 +1,1 @@
-rootProject.name = "kotlin_sprint_workshop"
+rootProject.name = "spring_boot_kotlin_workshop"
