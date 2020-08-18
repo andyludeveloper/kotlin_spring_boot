@@ -1,4 +1,10 @@
 package com.example.spring_boot_kotlin_workshop.service
 
-class UserService {
+import com.example.spring_boot_kotlin_workshop.data.dto.UserDto
+
+interface UserService {
+
+    fun addUser(userDto: UserDto):UserDto
+
+    fun findById(id: Long): UserDto
 }
