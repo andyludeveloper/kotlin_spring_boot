@@ -11,14 +11,14 @@ import java.lang.RuntimeException
 @Service("RealUserService")
 class UserServiceImpl(@Autowired val userRepository: UserRepository):UserService {
     override fun addUser(userDto: UserDto): UserDto =
-            User(null,
-                userDto.name.split(",")[0].trim(),
-                userDto.name.split(",")[1].trim(),
-                userDto.age
-            ).run {
-                val save = userRepository.save(this)
-                UserDto(save.id!!, save.firstName + ", "+ save.lastName, save.age)
-            }
+        User(null,
+            userDto.name.split(",")[0].trim(),
+            userDto.name.split(",")[1].trim(),
+            userDto.age
+        ).run {
+            val save = userRepository.save(this)
+            UserDto(save.id!!, "${save.firstName}, ${save.lastName}", save.age)
+        }
 
     override fun findById(id: Long): UserDto =
         userRepository.findById(id).map {
