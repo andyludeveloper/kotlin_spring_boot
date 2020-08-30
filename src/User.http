@@ -1,0 +1,13 @@
+### Add user
+POST localhost:8080/user
+Content-Type: application/json
+
+{
+  "id": "",
+  "name": "Andy, Lu",
+  "age": 100
+}
+
+### Find User by id
+GET localhost:8080/user?id=1
+Content-Type: application/json
