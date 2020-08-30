@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class UserController(
-        @Qualifier("DummyUserService") @Autowired val userService: UserService
+        @Qualifier("RealUserService") @Autowired val userService: UserService
 ):UserApi {
     override fun addUser(userDto: UserDto): UserDto = userService.addUser(userDto)
 
